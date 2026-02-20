@@ -1,0 +1,180 @@
+@keyframes marquee {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes marquee2 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+html {
+  font-size: 62.5%;
+  background: #000;
+  color: #fff;
+  font-family: monospace;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 30%;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url(teeth-kids.jpg) center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 100rem;
+  font-size: 3em;
+  padding: 8rem;
+  line-height: 1em;
+}
+
+.main li a,
+.highlight {
+  background: black;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-weight: normal;
+  color: white;
+  text-decoration: none;
+  padding: 0.2em;
+  line-height: 1.2em;
+}
+
+.main ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.main li a:hover {
+  border-bottom: 0.2em solid white;
+}
+
+.main li + li {
+  margin-top: 1em;
+}
+
+.main h1 {
+  font-size: 5em;
+  line-height: 1;
+  margin-top: 0.2em;
+}
+
+.main h2 {
+  font-size: 3em;
+  line-height: 1;
+}
+
+img.hero {
+  display: block;
+  width: 100%;
+}
+
+.marquee {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.marquee div {
+  white-space: nowrap;
+  animation: marquee 50s linear infinite;
+  position: absolute;
+  top: 0;
+  background: black;
+  border-bottom: solid 2px white;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.marquee div + div {
+  animation: marquee2 50s linear infinite;
+}
+
+.marquee__e {
+  transform: rotate(90deg);
+  transform-origin: 0% 0%;
+  left: 100%;
+}
+
+.marquee__s {
+  transform: rotate(180deg);
+  bottom: 0;
+  top: auto;
+}
+
+.marquee__w {
+  transform: rotate(270deg);
+  transform-origin: 0% 0%;
+  top: 100vw;
+}
+
+.corner {
+  width: 4rem;
+  height: 4rem;
+  background: black;
+  border: 4px solid white;
+  position: fixed;
+}
+
+.corner__1 {
+  left: -4px;
+  top: -4px;
+}
+
+.corner__2 {
+  right: -4px;
+  top: -4px;
+}
+
+.corner__3 {
+  right: -4px;
+  top: calc(100vh - 4rem);
+}
+
+.corner__4 {
+  left: -4px;
+  top: calc(100vh - 4rem);
+}

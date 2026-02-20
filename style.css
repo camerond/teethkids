@@ -154,11 +154,11 @@ img.hero {
 }
 
 .corner {
+  position: absolute;
   width: 4rem;
   height: 4rem;
   background: black;
   border: 4px solid white;
-  position: fixed;
 }
 
 .corner__1 {

@@ -50,17 +50,19 @@ body {
 }
 
 .bg {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
-  bottom: 0;
-  right: 0;
+  width: 100vw;
+  height: 100vh;
+  margin-top: -100vh;
   background: url(teeth-kids.jpg) center;
   background-size: cover;
   z-index: -1;
 }
 
 .main {
+  position: relative;
   margin: 0 auto;
   max-width: 100rem;
   font-size: 3em;

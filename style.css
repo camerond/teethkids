@@ -129,6 +129,7 @@ img.hero {
   font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 0.5em;
+  animation-delay: 0s;
 }
 
 .marquee div + div {
@@ -148,9 +149,9 @@ img.hero {
 }
 
 .marquee__w {
-  transform: rotate(270deg);
+  transform: rotate(-90deg);
   transform-origin: 0% 0%;
-  top: 100vw;
+  top: 100vh;
 }
 
 .corner {
@@ -173,10 +174,10 @@ img.hero {
 
 .corner__3 {
   right: -4px;
-  top: calc(100vh - 4rem);
+  bottom: -4px;
 }
 
 .corner__4 {
   left: -4px;
-  top: calc(100vh - 4rem);
+  bottom: -4px;
 }

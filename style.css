@@ -61,13 +61,31 @@ body {
   z-index: -1;
 }
 
+.epk,
 .main {
   position: relative;
   margin: 0 auto;
-  max-width: 100rem;
-  font-size: 3em;
+  max-width: 80rem;
   padding: 6rem 4rem;
   line-height: 1em;
+}
+
+.main {
+  max-width: 100rem;
+  font-size: 3em;
+}
+
+.epk__content {
+  background: black;
+  padding: 1em;
+  font-size: 2em;
+  line-height: 1.4;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 1em 0;
 }
 
 .main li a,
@@ -82,28 +100,42 @@ body {
   line-height: 1.2em;
 }
 
-.main ul {
-  list-style-type: none;
-  padding: 0;
+li a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 0.1em solid white;
 }
 
-.main li a:hover {
+li a:hover {
   border-bottom: 0.2em solid white;
 }
 
-.main li + li {
+li + li {
   margin-top: 1em;
 }
 
-.main h1 {
+.epk__content ul {
+  margin-left: 1em;
+}
+
+h1 {
   font-size: 5em;
   line-height: 1;
   margin-top: 0.2em;
 }
 
-.main h2 {
+h2 {
   font-size: 3em;
   line-height: 1;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-top: 1.5em;
+}
+
+p {
+  line-height: 1.4;
 }
 
 img.hero {

@@ -126,7 +126,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 1.6em;
   line-height: 1;
 }
 
@@ -213,4 +213,33 @@ img.hero {
 .corner__4 {
   left: -4px;
   bottom: -4px;
+}
+
+.lp {
+  background: #000;
+  text-align: center;
+  padding: 1em;
+  border: 0.2rem solid #fff;
+  font-size: 0.8em;
+  margin: 2em 0;
+}
+
+.lp .album-art {
+  display: block;
+  max-width: 50rem;
+  margin: 1em auto;
+}
+
+.lp img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.lp a {
+  color: #fff;
+}
+
+.lp strong {
+  font-size: 1.5em;
 }
